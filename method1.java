@@ -1,16 +1,14 @@
-class Main {
-
-    public int add(int a, int b) {
-        return a + b;
+public class method1 {
+    public void display1(){
+        System.out.println("method without parameter");
     }
-
+    public void display2(int a){
+        System.out.println("method with parameter: "+a);
+    }
     public static void main(String[] args) {
-        int num1 = 5;
-        int num2 = 10;
-
-        Main obj = new Main();
-        int sum = obj.add(num1, num2);
-
-        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
+        method1 obj=new method1();
+        obj.display1();
+        obj.display2(24);
     }
+    
 }
